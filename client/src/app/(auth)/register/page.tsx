@@ -16,7 +16,7 @@ export default function RegisterPage() {
         <>
             <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-x-36 p-4 md:p-8">
                 <div className="flex justify-center md:justify-start">
-                    <div className="relative mx-auto hidden md:block">
+                    <div className="relative mx-auto hidden lg:block">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             src={"LA.png"}
