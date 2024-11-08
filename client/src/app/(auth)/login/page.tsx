@@ -4,12 +4,13 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 import { IconBrandGoogle } from "@tabler/icons-react";
+// import { signIn } from "@/auth";
 
 export default function RegisterPage() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   console.log("Form submitted");
+  // };
 
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-x-36 p-4 md:p-8 min-h-screen">
@@ -32,7 +33,7 @@ export default function RegisterPage() {
           Login to aceternity if you can because we don&apos;t have a login flow yet
         </p>
 
-        <form className="my-8" onSubmit={handleSubmit}>
+        <form className="my-8" >
           <LabelInputContainer className="mb-4">
             <Label htmlFor="email">Email Address</Label>
             <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
