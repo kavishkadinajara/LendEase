@@ -53,7 +53,7 @@ export default function RegisterPage() {
         <div className="flex justify-center md:justify-start">
           <div className="relative mx-auto hidden lg:block">
             <img
-              src={"LA.png"}
+              src={"../assets/register.png"}
               alt="hero"
               className="max-w-full md:max-w-screen-sm z-10 fade-edges mx-auto w-full md:w-[480px] rounded-2xl shadow-2xl shadow-purple-950"
             />

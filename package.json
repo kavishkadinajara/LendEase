@@ -1,11 +1,6 @@
 {
 	"dependencies": {
-		"@radix-ui/react-label": "^2.1.0",
-		"@tabler/icons-react": "^3.22.0"
-	},
-	"devDependencies": {
-		"@types/aria-query": "^5.0.4",
-		"@types/prop-types": "^15.7.13",
-		"@types/scheduler": "^0.23.0"
+		"@tabler/icons-react": "^3.22.0",
+		"react-router-dom": "^7.0.1"
 	}
 }

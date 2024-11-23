@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.22.0",
     "client": "file:",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.11",
@@ -20,8 +21,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
+    "@types/aria-query": "^5.0.4",
+    "@types/prop-types": "^15.7.13",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "@types/scheduler": "^0.23.0",
     "@vitejs/plugin-react": "^4.3.3",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.13.0",

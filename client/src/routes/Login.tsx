@@ -15,9 +15,8 @@ export default function Login() {
     <div className="flex flex-col lg:flex-row justify-center items-center gap-8 md:gap-x-36 p-4 md:p-8 min-h-screen">
       <div className="flex justify-center lg:justify-start w-full md:w-auto">
         <div className="relative mx-auto hidden lg:block">
-          // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={"logo.png"}
+            src={register}
             alt="hero"
             className=" md:w-[530px] max-w-xs md:max-w-screen-sm rounded-2xl shadow-2xl shadow-purple-950"
           />
