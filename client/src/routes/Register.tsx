@@ -4,6 +4,7 @@ import { Input } from "../components/ui/input";
 import { cn } from "../lib/utils";
 import { IconBrandGoogle } from "@tabler/icons-react";
 import { useNavigate } from "react-router-dom";
+import register from "../assets/register.png";
 
 export default function RegisterPage() {
   const [formData, setFormData] = useState({
@@ -53,9 +54,9 @@ export default function RegisterPage() {
         <div className="flex justify-center md:justify-start">
           <div className="relative mx-auto hidden lg:block">
             <img
-              src={"../assets/register.png"}
+              src={register}
               alt="hero"
-              className="max-w-full md:max-w-screen-sm z-10 fade-edges mx-auto w-full md:w-[480px] rounded-2xl shadow-2xl shadow-purple-950"
+              className="max-w-full md:max-w-screen-sm z-10 fade-edges mx-auto w-full md:w-[580px] rounded-2xl shadow-2xl shadow-purple-950"
             />
           </div>
         </div>
@@ -119,17 +120,19 @@ export default function RegisterPage() {
             <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 
             <div className="flex flex-col space-y-4">
-              <button
-                className="relative group/btn flex space-x-2 items-center justify-center md:justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                <button
+                className="relative group/btn flex space-x-2 items-center justify-center px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
                 type="button"
                 onClick={() => alert("Google signup coming soon!")}
-              >
-                <IconBrandGoogle className="h-4 w-4 text-neutral-300" />
-                <span className="text-neutral-300 text-sm">
+                >
+                <div className="flex justify-center items-center gap-x-2">
+                  <IconBrandGoogle className="h-4 w-4 text-neutral-300" />
+                  <span className="text-neutral-300 text-sm text-center">
                   Google
-                </span>
+                  </span>
+                </div>
                 <BottomGradient />
-              </button>
+                </button>
             </div>
           </form>
           <p className="text-sm text-neutral-300 text-center mt-4">

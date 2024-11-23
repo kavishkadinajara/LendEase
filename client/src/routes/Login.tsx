@@ -4,6 +4,7 @@ import { Input } from "../components/ui/input";
 import { cn } from "../lib/utils";
 import { IconBrandGoogle } from "@tabler/icons-react";
 // import { signIn } from "@/auth";
+import login from "../assets/login.png";
 
 export default function Login() {
   // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -16,9 +17,9 @@ export default function Login() {
       <div className="flex justify-center lg:justify-start w-full md:w-auto">
         <div className="relative mx-auto hidden lg:block">
           <img
-            src={register}
+            src={login}
             alt="hero"
-            className=" md:w-[530px] max-w-xs md:max-w-screen-sm rounded-2xl shadow-2xl shadow-purple-950"
+            className=" md:w-[530px] max-w-xs fade-edges md:max-w-screen-sm rounded-2xl shadow-2xl shadow-purple-950"
           />
         </div>
       </div>
@@ -52,15 +53,20 @@ export default function Login() {
           <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />
 
           <div className="flex flex-col space-y-4">
-            <button
-              className="relative group/btn flex space-x-2 items-center justify-center md:justify-start px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
-              type="button"
-            >
-              <IconBrandGoogle className="h-4 w-4 text-neutral-300" />
-              <span className="text-neutral-300 text-sm">Google</span>
-              <BottomGradient />
-            </button>
-          </div>
+                <button
+                className="relative group/btn flex space-x-2 items-center justify-center px-4 w-full text-black rounded-md h-10 font-medium shadow-input bg-zinc-900 dark:shadow-[0px_0px_1px_1px_var(--neutral-800)]"
+                type="button"
+                onClick={() => alert("Google signup coming soon!")}
+                >
+                <div className="flex justify-center items-center gap-x-2">
+                  <IconBrandGoogle className="h-4 w-4 text-neutral-300" />
+                  <span className="text-neutral-300 text-sm text-center">
+                  Google
+                  </span>
+                </div>
+                <BottomGradient />
+                </button>
+            </div>
         </form>
         <p className="text-sm text-neutral-300 text-center mt-4">
           Don&apos;t have an account?{" "}
